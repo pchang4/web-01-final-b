@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Gotham-medium";
+  src:url(font/Gotham-Medium.otf);
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src:url(font/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: "Avenir-Next";
+  src:url(font/avenir-next-regular.otf);
+}
+
+header {
+  display: flex;
+  height: 45vw;
+  flex-direction: column;
+  background-image: url(img/headerimg.jpg);
+  background-size: cover;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+.headertext h1, p{
+  width: 70%;
+  margin: auto;
+    text-align: center;
+}
+
+.headertext h1 {
+  margin-top: 6%;
+  font-size: 5vw;
+  font-family: Gotham-Bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.headertext p {
+  font-size: 2vw;
+  margin-top: 6%;
+  line-height: 1.5;
+  font-family: Avenir-Next;
+  color: white;
+}
+
+nav {
+  display: flex;
+  height: 15%;
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+
+.buttons{
+  display: flex; 
+  width: 75%; 
+}
+
+.buttons div{
+  display: flex;
+  width: 13vw;
+  height: 40%;
+  background-color: #1A2930;
+  margin: 0 1.5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons div p {
+    color: white;
+    font-family: Gotham-medium;
+    font-size: 1.3vw;
+    
+}
+
+.buttons div:hover {
+background-color: #F7CE3E;
+}
+
+.searchicon {
+  width: 50%;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  width: 8vw;
+  margin: 0 1.5%;
+  background-color:  #F7CE3E;
+  align-items: center;
+  text-align: Center;
+}
+
+.logo h4 {
+  font-family: Gotham-Bold;
+  font-size: 2.3vw;
+}
+
+.buttons .search {
+  width: 3.5vw;
+}
+
+.grid {
+  display: grid;
+  grid-template: repeat(4, 20vw) / repeat(3, 1fr);
+  grid-gap: 2vw;
+  padding: 3vw;
+}
+
+.lefttag1, .lefttag2, .lefttag3, .lefttag4, .righttag1, .righttag2, .righttag3, .righttag4 {
+  display: flex;
+  height: 15%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: Gotham-Medium;
+  font-size: 1.1vw;
+}
+
+.lefttag1 {
+  background-color: #C5C1C0;
+}
+
+.post1{
+  background-image: url(img/sarahsze.jpg);
+  background-size: cover;
+}
+
+.righttag1 {
+  background-color:  #F7CE3E;
+  float: right;
+}
+
+.post2 {
+  background-image: url(img/dikeblair.jpg);
+  background-size: cover;
+}
+
+.lefttag2 {
+  background-color: #1A2930;
+  color: #C5C1C0;
+}
+.post3 {  
+  background-image: url(img/peterdoig.jpg);
+  background-size: cover;
+}
+
+.righttag2 {
+  background-color: black;
+  float: right;
+  color: #F7CE3E;
+}
+
+.post4{
+  background-image: url(img/fredwilson.jpg);
+  background-size: cover;
+}
+
+.lefttag3 {
+  background-color: #1A2930;
+  color: #C5C1C0;
+}
+
+.post5{
+  background-image: url(img/markleckey.jpg);
+  background-size: cover;
+}
+
+.righttag3 {
+  background-color:  #F7CE3E;
+  float: right;
+}
+
+.post6{
+  background-image: url(img/paulascher.png);
+  background-size: cover;
+}
+
+.lefttag4 {
+  background-color: black;
+  color: #F7CE3E;
+}
+
+.post7 {
+  background-image: url(img/andreafraser.jpg);
+  background-size: cover;
+}
+
+.righttag4 {
+  background-color: #C5C1C0;
+  float: right;
+}
+
+.post8{
+  background-image: url(img/chipkid.jpg);
+  background-size: cover;
+}
+
+.textbox1 {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A2930;
+  font-family: Gotham-Bold;
+
+}
+.textbox1 h3{
+  width: 75%;
+  font-size: 3.5vw;
+ text-transform: uppercase;
+  color: #C5C1C0;
+  
+}
+
+.textbox2 {
+  display: flex;
+  grid-column: 3/4;
+  grid-row: 3/5;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7CE3E;
+  font-family: Gotham-Bold;
+}
+
+.textbox2 h3{
+ width: 75%;
+ font-size: 3.5vw;
+ text-transform: uppercase;
+}
+
+footer {
+  display: grid;
+  grid-template: repeat(4, 20vw) / repeat(3, 1fr);
+  grid-gap: 2vw;
+  padding: 3vw;
+  height: 20vw;
+  background-color: #1A2930;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: Gotham-Medium;
+  color: #C5C1C0;
+}
+
+.links p {
+    margin: 3.5% 0;
+}
+
+.links p:hover {
+  color: #F7CE3E;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template: repeat(6, 30vw) / repeat(2, 1fr);
+    grid-gap: 2vw;
+    padding: 3vw;
+  }
+
+  .textbox1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .textbox2 {
+    grid-column: 2/3;
+    grid-row: 5/7;
+  }
+}

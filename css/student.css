@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: "Gotham-medium";
+    src:url(font/Gotham-Medium.otf);
+  }
+  @font-face {
+    font-family: "Gotham-Bold";
+    src:url(font/Gotham-Bold.otf);
+  }
+  @font-face {
+    font-family: "Avenir-Next";
+    src:url(font/avenir-next-regular.otf);
+  }
+  
+  header {
+    display: flex;
+    height: 45vw;
+    flex-direction: column;
+    background-image: url(img/headerimg.jpg);
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+  }
+  
+  .headertext h1, p{
+    width: 70%;
+    margin: auto;
+      text-align: center;
+  }
+  
+  .headertext h1 {
+    margin-top: 6%;
+    font-size: 5vw;
+    font-family: Gotham-Bold;
+    text-transform: uppercase;
+    color: #F7CE3E;
+  }
+  
+  .headertext p {
+    font-size: 2vw;
+    margin-top: 6%;
+    line-height: 1.5;
+    font-family: Avenir-Next;
+    color: #F7CE3E;
+  }
+  
+  nav {
+    display: flex;
+    height: 15%;
+    margin-top: 2%;
+    justify-content: space-between;
+  }
+  
+  
+  .buttons{
+    display: flex; 
+    width: 75%; 
+  }
+  
+  .buttons div{
+    display: flex;
+    width: 13vw;
+    height: 40%;
+    background-color: #1A2930;
+    margin: 0 1.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons div p {
+      color: white;
+      font-family: Gotham-medium;
+      font-size: 1.3vw;
+      
+  }
+  
+  .buttons div:hover {
+  background-color: #F7CE3E;
+  }
+  
+  .searchicon {
+    width: 50%;
+  }
+  
+  .logo {
+    display: flex;
+    height: 100%;
+    width: 8vw;
+    margin: 0 1.5%;
+    background-color:  #F7CE3E;
+    align-items: center;
+    text-align: Center;
+  }
+  
+  .logo h4 {
+    font-family: Gotham-Bold;
+    font-size: 2.3vw;
+  }
+  
+  .buttons .search {
+    width: 3.5vw;
+  }
+  .gridarticle {
+    display: grid;
+    grid-template: repeat(4, 25vw) / repeat(3, 1fr);
+    grid-gap: 2vw;
+    padding: 3vw;
+  }
+
+  .articletext {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .articlehead, .articlesubhead, .articlebody {
+    margin: 3% 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .articlehead {
+    font-size: 3vw;
+    font-family: Gotham-Bold;
+  }
+
+  .articlesubhead {
+    font-size: 2vw;
+    font-family: Gotham-medium;
+  }
+
+  .articlebody {
+    font-size: 1.5vw;
+    font-family: Avenir-next;
+    line-height: 2;
+  }
+
+  .articleimgone {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(img/Lauren.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+  }
+
+
+  .articleimgtwo {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(img/chad.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+  }
+
+  .articleimgthree {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-image: url(img/sarah.jpg);
+    background-size: cover;
+    background-position-y: 10%;
+  }
+
+  .articleimgfour {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-image: url(img/logan.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+  }
+
+  .gridbottom {
+    display: grid;
+    grid-template: repeat(2, 20vw) / repeat(3, 1fr);
+    grid-gap: 2vw;
+    padding: 0 3vw 3vw 3vw;
+  }
+  
+.righttag1, .righttag2, .righttag3, .righttag4{
+    display: flex;
+    height: 15%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    font-family: Gotham-Medium;
+    font-size: 1.1vw;
+    float: right;
+  }
+  
+  .righttag1 {
+    background-color: #C5C1C0;
+  }
+  
+  .post1{
+    background-image: url(img/joncontino.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+  }
+  
+  .righttag2 {
+    background-color:  #F7CE3E;
+  }
+  
+  .post2 {
+    background-image: url(img/gemma.jpg);
+    background-size: cover;
+  }
+  
+  .righttag3 {
+    background-color: #F7CE3E;
+  }
+  .post3 {  
+    background-image: url(img/jessicawalsh.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+  }
+  
+  .righttag4 {
+    background-color: #C5C1C0;
+  }
+  
+  .post4{
+    background-image: url(img/mikeperry.jpg);
+    background-size: cover;
+  }
+  
+
+  
+  .textbox1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A2930;
+    font-family: Gotham-Bold;
+  
+  }
+
+  .textbox1 h3{
+    width: 75%;
+    font-size: 3.5vw;
+   text-transform: uppercase;
+    color: #C5C1C0;
+  }
+
+  .textbox1 div {
+    height: 10px;
+    width: 80%;
+    margin: 8% auto;
+    background-color: #F7CE3E;
+  }
+
+  .textbox1 h4{
+    width: 75%;
+    font-size: 3vw;
+   text-transform: uppercase;
+    color: #C5C1C0;
+  }
+
+
+  
+  footer {
+    display: grid;
+    grid-template: repeat(4, 20vw) / repeat(3, 1fr);
+    grid-gap: 2vw;
+    padding: 3vw;
+    height: 20vw;
+    background-color: #1A2930;
+  }
+  
+  footer div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: Gotham-Medium;
+    color: #C5C1C0;
+  }
+  
+  .links p {
+      margin: 3.5% 0;
+  }
+  
+  .links p:hover {
+    color: #F7CE3E;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .gridbottom {
+      display: grid;
+      grid-template: repeat(3, 30vw) / repeat(2, 1fr);
+      grid-gap: 2vw;
+      padding: 3vw;
+    }
+  
+    .textbox1 {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+  }
