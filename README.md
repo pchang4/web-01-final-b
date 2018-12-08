@@ -22,4 +22,5 @@ Submit your Github Repository link and your Github live link on Canvas.
 
 ## Due Date
 This will be due on December 7th, at 11:59pm. We will not be meeting for an in-class final.
+
 *The tabs for the Faculty and Students pages are linked so they should work in moving between the pages
